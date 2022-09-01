@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="icon.png">
+    <title>Travel landing page</title>
+</head>
+
+<body>
+
+    <section class="showcase">
+        <header>
+            <h2 class="logo">My World</h2>
+            <div class="toggle"></div>
+        </header>
+
+        <video src="bg-2.mp4" muted loop autoplay></video>
+
+        <div class="overlay">This is overlay</div>
+
+        <div class="text">
+            <h2>Never Stop</h2>
+            <h3>Exploring The World</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio qui asperiores voluptas doloribus
+                quod accusamus non sunt veniam dolores ipsa.</p>
+            <a href="#">Explore</a>
+        </div>
+
+        <ul class="social">
+            <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram-square"></i></a></li>
+            <li><a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a></li>
+
+            <!-- <li><a class="fa-brands fa-facebook"></a></li>
+            <li><a class="fa-brands fa-twitter"></a></li>
+            <li><a class="fa-brands fa-instagram-square"></a></li> -->
+        </ul>
+    </section>
+
+    <div class="menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Destination</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+    <script>
+        const menuToggle = document.querySelector('.toggle')
+        const showcase = document.querySelector('.showcase')
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active')
+            showcase.classList.toggle('active')
+        })
+    </script>
+</body>
+
+</html>
